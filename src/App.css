@@ -1,0 +1,117 @@
+* {
+  font-family: "Cute Font", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: pink;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.valentineCard {
+  width: 90vw;
+  min-height: 500px;
+  background-color: rgba(0, 0, 0 0);
+  padding: 15px;
+  box-sizing: border-box;
+  border: 7px solid white;
+  outline: 6px solid white;
+  outline-offset: -20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+  background: transparent;
+}
+
+#backgroundPattern {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1
+}
+
+.valentineCard > h2 {
+  color: white;
+  line-height: 0.8em;
+  font-size: 4em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.valentineCard > h2 > span {
+  color: rgb(178, 56, 56);
+}
+
+.buttonRow {
+  width: 80%;
+  max-width: 220px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.buttonRow > button {
+  width: 100px;
+  height: 50px;
+  font-size: 2em;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border: 4px solid white;
+}
+
+.buttonRow > button:hover {
+  border-color: #F88379;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.letter {
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  border-color: #F88379;
+}
+
+.letter > h2 {
+  color: rgb(59, 59, 59);
+  font-size: 1.9em;
+  text-align: center;
+  align-self: flex-end;
+}
+
+.letter > h3 {
+  font-size: 1.5em;
+}
+
+#wrongAnswerAlert {
+  position: absolute;
+  top: 30%;
+  font-weight: bold;
+  opacity: 0;
+  color: red;
+  text-align: center;
+  line-height: 0.7em;
+  font-size: 7em;
+  margin: 0;
+  z-index: 200;
+  transition: 0.2s;
+}
