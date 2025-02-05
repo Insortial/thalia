@@ -1,8 +1,5 @@
-import React, { useState } from 'react'
 
-type Props = {}
-
-const Letter = (props: Props) => {
+const Letter = () => {
 
   return (
     <>

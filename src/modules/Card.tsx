@@ -1,9 +1,7 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-type Props = {}
-
-const Card = (props: Props) => {
+const Card = () => {
   const [wrongAnswerState, setWrongAnswerState] = useState(0)
   const navigate = useNavigate()
 
